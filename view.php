@@ -108,7 +108,7 @@ VIDEO_PLAYER;
 
             $result .= '</ul>';
 
-            $result .= '<p style="text-align:left;padding-left:40px;padding-top:10px;font-size:12px;"><input type="checkbox" name="show_old_messages" id="show_old_messages" onchange="showOrHideOldMessages(); return false;"><label for="show_old_messages">Rodyti žinutes, išsiųstas iki vestuvių</label></p>';
+            $result .= '<p style="text-align:left;padding-left:40px;padding-top:10px;font-size:12px;"><input type="checkbox" name="show_old_messages" id="show_old_messages" onchange="showOrHideOldMessages(); return false;"><label for="show_old_messages">Rodyti žinutes, išsiųstas iki šventės</label></p>';
         }
 
         return $result;
