@@ -1,0 +1,217 @@
+body {
+    text-align: center;
+    font-family: arial;
+}
+h1 {
+    padding-left: 57px;
+    text-align: left;
+}
+h2 {
+    text-align: left;
+}
+input, textarea {
+    font-family: arial;
+    font-size: 14px;
+    padding:5px;
+}
+video {
+    background-color: #010001; /*#555*/;
+    color: #fff;
+    border-radius:4px;
+}
+img#intro {
+    width:920px;
+    /*height:500px;*/
+    padding-top:5px;
+}
+ul#comments {
+    text-align: left;
+}
+div#menu {
+    padding-left: 57px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+div#menu ul {
+    padding:0;
+}
+div#menu li {
+
+    list-style: none;
+    padding: 5px;
+}
+div#menu ul li a {
+    text-decoration: none;
+}
+div#menu ul li a:hover {
+    text-decoration: underline;
+}
+#intro_not_available {
+    padding-left: 57px;
+    text-align: left;
+}
+#comments li {
+    padding:7px;
+    list-style-type:none;
+    border-top: 1px solid #fff;
+    border-bottom: 1px dashed #f0f0f0;
+    padding-bottom: 20px;
+}
+#comments li:hover {
+    background-color: #F9F9F9;
+    color: #000;
+    /*border-top: 1px solid green;
+    border-bottom: 1px solid green;*/
+}
+fieldset.comment {
+    width:800px;
+    text-align: left;
+    padding: 20px;
+    margin:30px;
+    border: 1px solid green; /*#999;*/
+    background-color: #f8f8f8;
+    border-radius:4px;
+    width: 760px;
+}
+#border {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    /*height: 2000px;*/
+    margin: 44px auto 40px;
+    padding: 0;
+    position: relative;
+    width: 980px;
+    border-radius:15px;
+}
+#container {
+    background-color: #FFFFFF;
+    /*height: 1800px;*/
+    margin: 34px auto 0;
+    padding: 0;
+    padding-bottom: 80px;
+    position: relative;
+    width: 920px;
+}
+#rp {
+    display: inline-block;
+}
+#nickname {
+    width: 600px;
+}
+#message {
+    width: 748px;
+    min-height: 250px;
+}
+.text_to_left {
+    text-align:left;
+}
+.timestamp {
+    color: #999;
+    font-size: 14px;
+}
+.nickname {
+    font-weight: bold;
+    font-size: 14px;
+}
+.footnote {
+    color: #abadb3;
+}
+#content_messages {
+    display:none;
+    padding-top: 90px;
+    width: 825px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#all_messages {
+    padding-top: 40px;
+    padding-left: 45px;
+}
+#logout {
+    text-align: right;
+    padding-right: 12px;
+    float: right;
+}
+#logout a {
+    color: black;
+    text-decoration: none;
+}
+#logout a:hover {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+#content_video {
+
+}
+#content thanks {
+
+}
+#content_questions_answers {
+    text-align: left;
+}
+#content_questions_answers dt {
+    padding-top: 40px;        
+    font-weight: bold;
+}
+
+div.menu3
+{
+    /*width:500px;margin:0 auto;*//*Uncomment this line to make the menu center-aligned.*/
+    text-align:center;
+    font-size:0;
+    height: 27px;    
+    *position:relative;*top:1px;/*Hacks for IE6 & IE7 */    
+}
+
+div.menu3 a
+{
+    display: inline-block;
+    padding: 0 20px;
+    margin-right:1px; /* It specifies the distance between each tab */
+    background:#F7F7F7;
+    color:Black;
+    text-decoration:none;
+    font: normal 12px Arial;
+    line-height: 24px;
+    border:1px solid #CAD0DB;
+    border-bottom:0;
+    color:#666;
+    vertical-align:top;/*ChangeSet#2*/
+    text-decoration:none;
+}
+
+div.menu3 a:hover, div.menu3 a.current
+{
+    background:#E9ECF0;
+    line-height: 25px;
+    color:#000;
+}
+
+div.menu3sub
+{
+    height:3px;
+    border:1px solid #CAD0DB;
+    background:#E9ECF0;
+}
+img.uploaded_image {
+    padding: 5px;
+    width: 100px;
+    max-height: 100px;
+}
+a.download_button {
+    padding:0;
+    margin-left: -10px;
+}
+img.download_button {
+    width:20px;
+    padding-left:0;
+    padding-right:5px;
+}
+li.old_message {
+    display: none;
+}
+#info_message {
+    color:maroon;
+}

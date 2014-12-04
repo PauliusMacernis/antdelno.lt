@@ -1,0 +1,12 @@
+# Start A2 Switcher Block
+# Do not remove or modify this block! Added by PHP Switcher from cPanel to use an alternate PHP version. Contact Support for details.
+<IfModule mod_suphp.c>
+  AddHandler application/x-httpd-php-5.5.0 .php
+</IfModule>
+# End A2 Switcher Block
+AddType video/ogg  .ogv
+AddType video/mp4  .mp4
+AddType video/webm .webm
+
+SuPHP_ConfigPath %{DOCUMENT_ROOT}
+#php_value post_max_size 120M

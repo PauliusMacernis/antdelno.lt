@@ -1,0 +1,12 @@
+# Composer files
+composer.phar
+vendor/
+
+# Local configs
+config/config.*.local.php
+
+# Hosting specifics, nothing important
+cgi-bin/
+
+# Directory to manualy save video files to
+videos/

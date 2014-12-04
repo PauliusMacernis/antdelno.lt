@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="lt">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{PAGE_TITLE}</title>
+        {PAGE_CSS}
+        {PAGE_JAVASCRIPT}
+    </head>
+    <body>
+        <div id="border">
+            <div id="container">
+                <div id="logout">
+                    <form id="form_logout" action="/" method="post">
+                        <a href="#" onclick="document.getElementById('form_logout').submit();
+                                return false;" title="Išeiti">X</a>
+                        <input type="hidden" name="action" value="logout" />
+                    </form>
+                </div>
+                <div class="menu3">
+                    <!--<a href="#" onclick="closeAllDIVs(); $('#content_intro').fadeIn(400);">*</a>-->
+                    <a href="#" onclick="closeAllDIVs();
+                            $('#content_questions_answers').fadeIn(400);">Bendra informacija</a>
+                    <a href="#" onclick="closeAllDIVs();
+                            $('#content_video').fadeIn(400);">Kvietimas į vestuves</a>
+                    <a href="#" onclick="closeAllDIVs();
+                            $('#content_messages').fadeIn(400);">Žinutės ({MESSAGES_AMOUNT}) + Nuotraukos</a>
+                    <a href="#" onclick="closeAllDIVs();
+                            $('#content_thanks').fadeIn(400);">Ačiū</a>
+                </div>
+                <div class="menu3sub"> </div>
+
+                <div id="content_questions_answers">
+                    {CONTENT_QUESTIONS_ANSWERS}
+                </div>
+
+                <div id="content_video" style="display: none;">
+                    {CONTENT_VIDEO}
+                </div>
+
+                <div id="content_messages" style="display: none;">
+                    {CONTENT_MESSAGES_LIST}
+                </div>
+                <div id="content_thanks" class="text_to_left" style="display: none;">
+                    {CONTENT_THANKS}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
