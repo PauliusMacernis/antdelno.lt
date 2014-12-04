@@ -1,10 +1,14 @@
 antdelno.lt
 ===========
 
-Simple website for the private event with few friends invited. The website should be hosted privately, so no Facebook or other media sharing websites will be involved.
+Simple website for the private event with few friends invited. The website should be hosted privately, so no Facebook or other media sharing websites will be involved. 
 
 ##### The purpose of using
 Closed circle of people get one password to log in and see the information you provide on the event.
+
+##### Tested on
+MySQL: 5.5.36
+PHP  : 5.5.0
 
 ##### Install process
 1. Run SQL commands found inside the /install/antdelno_lt.sql -- this will create database(DB), DB tables, sample data. Sample data could be deleted or changed by using MySQL DB management tools like phpMyAdmin, MySQL Workbench, HeidiSQL, etc.
