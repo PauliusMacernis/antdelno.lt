@@ -37,7 +37,7 @@ class MainModel {
 
         $PDO = $this->connectToDbAndGetConnection();
 
-        $q = 'SELECT content FROM articles WHERE id=:content_id ORDER BY created DESC LIMIT 1';
+        $q = 'SELECT content FROM articles WHERE id=:content_id ORDER BY `order` ASC LIMIT 1';
         $PDOStatement = $PDO->prepare($q);
         $PDOStatement->bindValue('content_id', $content_id, PDO::PARAM_STR);
         $PDOStatement->execute();
