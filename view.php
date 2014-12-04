@@ -79,7 +79,7 @@ VIDEO_PLAYER;
                 foreach ($files_original as $key => $file_url) {
 
                     if (!isset($files_thumbnail[$key]) && !isset($files_lightbox[$key])) {
-                        $result .= '<a href="' . $files_original[$key] . '" title="' . $files_original[$key] . '" download="' . pathinfo($files_original[$key], PATHINFO_BASENAME) . '"><img class="uploaded_image" src="/images/download.png" /></a>';
+                        $result .= '<div class="uploaded_image_and_download"><div class="uploaded_image_and_download_inner"><a class="uploaded_image_download_only" href="' . $files_original[$key] . '" title="' . $files_original[$key] . '" download="' . pathinfo($files_original[$key], PATHINFO_BASENAME) . '"><img class="uploaded_image_download_only" src="/images/download.png" /></a></div></div>';
                         continue;
                     }
 
@@ -98,10 +98,12 @@ VIDEO_PLAYER;
                     //    continue;
                     //} 
 
-                    $result .= '<a class="uploaded_image" href="' . $files_lightbox[$key] . '" title="' . $files_original[$key] . '."><img class="uploaded_image" src="' . $files_thumbnail[$key] . '" /></a><a class="download_button" download="' . pathinfo($files_original[$key], PATHINFO_BASENAME) . '" href="' . $files_original[$key] . '"><img class="download_button" src="/images/download.png" /></a>';
+                    $result .= '<div class="uploaded_image_and_download"><div class="uploaded_image_and_download_inner"><a class="uploaded_image" href="' . $files_lightbox[$key] . '" title="' . $files_original[$key] . '."><img class="uploaded_image" src="' . $files_thumbnail[$key] . '" /></a><a class="download_button" download="' . pathinfo($files_original[$key], PATHINFO_BASENAME) . '" href="' . $files_original[$key] . '"><img class="download_button" src="/images/download.png" /></a></div></div>';
+                    //<span class="clear_left"></span>
+                    //<!---->
                 }
 
-
+                $result .= '<span class="clear_left"></span>';
                 $result .= '</div>
                             </li>';
             }
