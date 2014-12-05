@@ -14,7 +14,7 @@ class MainView {
     protected function getCss() {
 
         $result = <<<CSS
-<link rel="stylesheet" href="/css/main.css" />
+<link rel="stylesheet" href="/css/main.css?v2" />
 <link rel="stylesheet" href="/css/colorbox.css" />
 CSS;
 
