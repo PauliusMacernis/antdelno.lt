@@ -213,12 +213,16 @@ span.clear_left {
     position: relative;
     width: 100px;
     height: 100px;
+    background-color: #eee;
 }
 a.uploaded_image {
     display: inline-block;
     position: absolute;
     left:0;
     bottom: 0;
+    right: 0;
+    top:0;
+    margin:auto;
 }   
 img.uploaded_image {
     display: inline-block;
@@ -232,12 +236,16 @@ img.uploaded_image {
     border: 0;
     left:0;
     bottom: 0;
+    right: 0;
+    top:0;
+    margin:auto;
 }
 a.download_button {
     display: inline-block;
     position: absolute;
     left:0;
     bottom: 0;
+    z-index: 9999;
 }
 img.download_button {
     display: inline-block;
@@ -249,6 +257,7 @@ img.download_button {
     -moz-border-radius: 2px 2px 2px 2px;
     -webkit-border-radius: 2px 2px 2px 2px;
     background-color: #fff;
+    z-index: 9999;
 }
 a.uploaded_image_download_only,
 img.uploaded_image_download_only {
