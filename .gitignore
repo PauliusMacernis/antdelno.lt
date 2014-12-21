@@ -10,3 +10,6 @@ cgi-bin/
 
 # Directory to manualy save video files to
 videos/
+
+# Visits log
+visits.log
