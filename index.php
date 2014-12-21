@@ -46,16 +46,18 @@ if (!isset($_SESSION['authorized_user']) || !($_SESSION['authorized_user'])) {
 
 
 // BEGIN. Already logged into web, log this fact into log-visits.log
-$log_file = fopen(_VISITS_LOG_FILE, "a+");
-fwrite($log_file, 
-        "\n " . date("Y-m-d H:i:s") 
-        . "\n IP:               " . $_SERVER['REMOTE_ADDR']
-        . "\n Public password:  " . (isset($_SESSION['password']) ? $_SESSION['password'] : (isset($_REQUEST['password']) ? $_REQUEST['password'] : "-"))
-        . "\n Action:           " . (isset($action) ? $action : "default")
-        . "\n User agent:       " . $_SERVER['HTTP_USER_AGENT'] 
-        . "\n"
-        );
-fclose($log_file);
+if(defined("_VISITS_LOG_FILE") && ((bool)_VISITS_LOG_FILE)) {
+    $log_file = fopen(_VISITS_LOG_FILE, "a+");
+    fwrite($log_file, 
+            "\n " . date("Y-m-d H:i:s") 
+            . "\n IP:               " . $_SERVER['REMOTE_ADDR']
+            . "\n Public password:  " . (isset($_SESSION['password']) ? $_SESSION['password'] : (isset($_REQUEST['password']) ? $_REQUEST['password'] : "-"))
+            . "\n Action:           " . (isset($action) ? $action : "default")
+            . "\n User agent:       " . $_SERVER['HTTP_USER_AGENT'] 
+            . "\n"
+            );
+    fclose($log_file);
+}
 // END. Already logged into web, log this fact into log-visits.log
 
 
