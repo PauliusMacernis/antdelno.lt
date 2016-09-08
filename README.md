@@ -1,7 +1,7 @@
 antdelno.lt
 ===========
 
-Simple website for the private event with few friends invited. The website should be hosted privately, so no Facebook or other media sharing websites will be involved. 
+Simple website for the private event with few friends invited. The website should be hosted privately, so no Facebook or other media sharing websites will be involved. The website in action: https://youtu.be/5diVEnkX5TU
 
 ##### The purpose of using
 Closed circle of people get one password to log in and see the information you provide on the event.
